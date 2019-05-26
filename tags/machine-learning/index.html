@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 219 个字)
+                    4 分钟 读完 (大约 536 个字)
                 </span>
                 
                 
@@ -172,14 +172,24 @@
             
         </h1>
         <div class="content">
-            <h2 id="1、逻辑回归-LR-公式推导"><a href="#1、逻辑回归-LR-公式推导" class="headerlink" title="1、逻辑回归(LR)公式推导"></a>1、逻辑回归(LR)公式推导</h2><h3 id="Logistic函数-sigmoid函数"><a href="#Logistic函数-sigmoid函数" class="headerlink" title="Logistic函数(sigmoid函数):"></a>Logistic函数(sigmoid函数):</h3><blockquote>
-<p>$f(x)=\frac{1}{1+e^{-z}}$</p>
+            <h2 id="1、逻辑回归-LR-公式推导"><a href="#1、逻辑回归-LR-公式推导" class="headerlink" title="1、逻辑回归(LR)公式推导"></a>1、逻辑回归(LR)公式推导</h2><h3 id="Logistic函数-sigmoid函数"><a href="#Logistic函数-sigmoid函数" class="headerlink" title="Logistic函数(sigmoid函数):"></a>Logistic函数(sigmoid函数):</h3><ul>
+<li><p>sigmoid函数公式如下：</p>
+<blockquote>
+<p>$$ f(x)=\frac{1}{1+e^{-z}} $$</p>
 </blockquote>
-<h3 id="Logistic函数求导"><a href="#Logistic函数求导" class="headerlink" title="Logistic函数求导:"></a>Logistic函数求导:</h3><blockquote>
-<p>$\frac{df(x)}{dz}=\frac{e^{-z}}{(1+e^{-z})^{2}}$ $=\frac{1}{1+e^{-z}}(1-\frac{1}{1+e^{-z}})$ $=f(x)(1-f(x))$</p>
+</li>
+<li><p>sigmoid函数图像如下，函数值在(0, 1)区间内<br><img src="https://github.com/lovekey111/images/ML/sigmoid.png" alt="sigmoid"></p>
+</li>
+</ul>
+<h3 id="Logistic函数求导"><a href="#Logistic函数求导" class="headerlink" title="Logistic函数求导:"></a>Logistic函数求导:</h3><ul>
+<li><p>sigmoid函数求导后公式如下：</p>
+<blockquote>
+<p>$$\frac{df(x)}{dz}=\frac{e^{-z}}{(1+e^{-z})^{2}} =\frac{1}{1+e^{-z}}(1-\frac{1}{1+e^{-z}}) =f(x)(1-f(x))$$</p>
 </blockquote>
-<h3 id="逻辑回归表达式"><a href="#逻辑回归表达式" class="headerlink" title="逻辑回归表达式"></a>逻辑回归表达式</h3><h3 id="逻辑回归条件概率分布"><a href="#逻辑回归条件概率分布" class="headerlink" title="逻辑回归条件概率分布"></a>逻辑回归条件概率分布</h3><p>合并为</p>
-<h3 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h3><p>极大似然估计</p>
+</li>
+<li><p>sigmoid函数求导后图像如下, 图像为关于y轴对称的偶函数<br><img src="https://github.com/lovekey111/images/ML/diff_sigmoid.png" alt="diff_sigmoid"></p>
+</li>
+</ul>
         </div>
         
         
@@ -226,7 +236,7 @@
                     
                     
                     <p class="is-size-6 is-block">
-                        Stay foolish stay hungry
+                        Stay hungry stay foolish
                     </p>
                     
                     
